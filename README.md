@@ -15,5 +15,3 @@ kadar genişletip, sorular çözüp, pratik yapabiliyorsunuz.
 Aşağıda küçük bir demosunu izleyebilirsiniz.
 
 Herhangi bir internet bağlantısına gerek duymadan, ücretsiz bir şekilde, istediğiniz zaman kelime pratiği yapma imkanına sahip oluyorsunuz.
-
-• Herhangi öneri, şikayet ve yardım için helpmyvocabulary@gmail.com mail atabilirsiniz ya da aşağıya yorum bırakabilirsiniz.
