@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;. "
+        android:inputType="textCapSentences"
+        android:hint="Enter word name"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.? "
+        android:inputType="textCapSentences"
+        android:hint="Enter the usage(s)"
+        android:ems="10"
+        android:id="@+id/equivalent"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="5dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/typeList"
+        android:layout_below="@+id/equivalent"
+        android:layout_alignLeft="@+id/equivalent"
+        android:layout_alignStart="@+id/equivalent"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.? "
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="center"
+        android:hint="Example sentence (Optional)"
+        android:ems="15"
+        android:id="@+id/example"
+        android:layout_below="@+id/typeList"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/example"
+        android:layout_alignRight="@+id/typeList"
+        android:layout_alignEnd="@+id/typeList"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="Add"
+            android:id="@+id/add"
+            android:background="#90A4AE"
+            android:layout_weight="1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:background="#90A4AE"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

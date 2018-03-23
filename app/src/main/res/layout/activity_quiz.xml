@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#B3E5FC"
+    android:onClick="buttonControl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:background="@drawable/soruarkaplani"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableLeft="@drawable/cup"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:id="@+id/point_tv"
+                android:layout_above="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/qqqq"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:id="@+id/progress_tv" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/soruarkaplani">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/question_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="#4FC3F7"
+                android:id="@+id/choiceOne"
+                android:drawableLeft="@drawable/aaaa"
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="3dp"
+                 />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="#4FC3F7"
+                android:id="@+id/choiceTwo"
+                android:drawableLeft="@drawable/bbbb"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="#4FC3F7"
+                android:id="@+id/choiceThree"
+                android:drawableLeft="@drawable/cccc"
+                android:layout_below="@+id/choiceTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                 />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="#4FC3F7"
+                android:id="@+id/choiceFour"
+                android:drawableLeft="@drawable/dddd"
+                android:layout_marginTop="3dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="#81D4FA"
+                    android:textSize="12sp"
+                    android:text="BACK TO MAIN MENU "
+                    android:layout_margin="4dp"
+                    android:id="@+id/backToMainMenu"
+                    android:layout_below="@+id/scrollView"
+                    android:drawableLeft="@drawable/back"
+                    android:onClick="buttonControl"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="#81D4FA"
+                    android:textSize="12sp"
+                    android:text="RESET QUIZ "
+                    android:layout_margin="4dp"
+                    android:id="@+id/resetQuiz"
+                    android:layout_below="@+id/scrollView"
+                    android:drawableLeft="@drawable/reset"
+                    android:onClick="buttonControl" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="#81D4FA"
+                    android:textSize="12sp"
+                    android:text="FINISH THE TEST "
+                    android:layout_margin="4dp"
+                    android:id="@+id/finishTest"
+                    android:layout_below="@+id/scrollView"
+                    android:drawableLeft="@drawable/statistics"
+                    android:onClick="buttonControl" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

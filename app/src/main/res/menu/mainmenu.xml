@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        />
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        android:icon="@drawable/add"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/totalWord"
+        android:title="Total Word"
+        app:showAsAction="never"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/backup"
+        android:title="Backup"
+        app:showAsAction="never"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/Import"
+        android:title="Import"
+        app:showAsAction="never"
+        android:orderInCategory="3"/>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+
+
+
+</menu>

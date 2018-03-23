@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ListView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:background="#B3E5FC"
+            android:layout_weight="10"
+            android:longClickable="true" />
+
+        <RelativeLayout
+            android:background="#81D4FA"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+
+            android:id="@+id/relative">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/textName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/textType"
+                android:layout_below="@+id/titleTypes"
+                android:layout_alignLeft="@+id/titleTypes"
+                android:layout_alignStart="@+id/titleTypes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/textUsage"
+                android:layout_below="@+id/titleUsage"
+                android:layout_alignLeft="@+id/titleUsage"
+                android:layout_alignStart="@+id/titleUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/textExample"
+                android:layout_below="@+id/titleExample"
+                android:layout_alignLeft="@+id/titleExample"
+                android:layout_alignStart="@+id/titleExample" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTypes"
+                android:textColor="#FF7043"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textName"
+                android:layout_alignLeft="@+id/textName"
+                android:layout_alignStart="@+id/textName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleUsage"
+                android:textColor="#FF7043"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/textType"
+                android:layout_alignLeft="@+id/textType"
+                android:layout_alignStart="@+id/textType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleExample"
+                android:textColor="#FF7043"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/textUsage"
+                android:layout_alignLeft="@+id/textUsage"
+                android:layout_alignStart="@+id/textUsage" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/quiz"
+                android:id="@+id/openExam"
+                android:layout_marginBottom="99dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/textExample"
+                android:layout_toEndOf="@+id/textExample"
+                android:id="@+id/reklam">
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
