@@ -15,3 +15,11 @@ kadar genişletip, sorular çözüp, pratik yapabiliyorsunuz.
 Aşağıda küçük bir demosunu izleyebilirsiniz.
 
 Herhangi bir internet bağlantısına gerek duymadan, ücretsiz bir şekilde, istediğiniz zaman kelime pratiği yapma imkanına sahip oluyorsunuz.
+
+![](images/main.png)
+![](images/addword.png)
+![](images/testmode.png)
+![](images/engtotr.png)
+![](images/trtoeng.png)
+![](images/faultsquestion.png)
+![](images/sentenceinword.png)
